@@ -38,35 +38,35 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="s3pi.CustomForms">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="s3pi.Extensions">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Extensions.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Interfaces">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.NameMapResource">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.NameMapResource.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.NameMapResource.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Package">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Package.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Package.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Settings">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Settings.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Settings.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.WrapperDealer">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.WrapperDealer.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.WrapperDealer.dll</HintPath>
     </Reference>
     <Reference Include="System.configuration" />
     <Reference Include="System.Custom">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\System.Custom.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\System.Custom.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -103,7 +103,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.DefaultResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.DefaultResource.dll">
       <Link>s3pi.DefaultResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -126,7 +126,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)..\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
+    <PreBuildEvent>"$(SolutionDir)..\..\s3pi\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

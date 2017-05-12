@@ -6,7 +6,7 @@ rem -%ConfigurationName%
 set src=%TargetName%-Source
 set MAKENSIS=D:\Program Files (x86)\NSIS\makensis.exe
 
-set out=S:\Sims3\Tools\s3oc\
+set out=S:\Sims3\Tools\sims3tools\builds\s3oc\
 set helpFolder=%out%HelpFiles
 
 set mydate=%date: =0%
@@ -30,7 +30,7 @@ if x%ConfigurationName%==xRelease goto REL
 set pdb=
 goto noREL
 :REL:
-set pdb=-xr!*.pdb
+set pdb=-xr!*.pdb -xr!*.xml
 :noREL:
 
 
@@ -56,11 +56,11 @@ pushd "%base%-%suffix%"
 (
 echo !cd %base%-%suffix%
 for %%f in (*) do echo File /a %%f
-pushd HelpFiles
-echo SetOutPath $INSTDIR\HelpFiles
-for %%f in (*) do echo File /a HelpFiles\%%f
-echo SetOutPath $INSTDIR
-popd
+rem pushd HelpFiles
+rem echo SetOutPath $INSTDIR\HelpFiles
+rem for %%f in (*) do echo File /a HelpFiles\%%f
+rem echo SetOutPath $INSTDIR
+rem popd
 pushd Resources
 echo SetOutPath $INSTDIR\Resources
 for %%f in (*) do echo File /a Resources\%%f
@@ -71,10 +71,10 @@ dir /-c "..\%base%-%suffix%" | find " bytes" | for /f "tokens=3" %%f in ('find /
 
 (
 for %%f in (*) do echo Delete $INSTDIR\%%f
-pushd HelpFiles
-for %%f in (*) do echo Delete $INSTDIR\HelpFiles\%%f
-echo RmDir HelpFiles
-popd
+rem pushd HelpFiles
+rem for %%f in (*) do echo Delete $INSTDIR\HelpFiles\%%f
+rem echo RmDir HelpFiles
+rem popd
 pushd Resources
 for %%f in (*) do echo Delete $INSTDIR\Resources\%%f
 echo RmDir Resources

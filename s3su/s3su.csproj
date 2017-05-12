@@ -65,24 +65,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="s3pi.CustomForms">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.DefaultResource">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.DefaultResource.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.DefaultResource.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Filetable, Version=1108.29.1820.33010, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Filetable.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Filetable.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Interfaces">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Package">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Package.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Package.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Custom">
-      <HintPath>..\s3pi\build\bin\Release\System.Custom.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\System.Custom.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -182,7 +182,7 @@
   <PropertyGroup>
     <PostBuildEvent>
     </PostBuildEvent>
-    <PreBuildEvent>"$(SolutionDir)..\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
+    <PreBuildEvent>"$(SolutionDir)..\..\s3pi\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <None Include="preBuild.bat" />

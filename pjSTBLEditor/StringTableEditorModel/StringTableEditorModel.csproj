@@ -32,30 +32,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CreateAssemblyVersion">
-      <HintPath>..\..\s3pi\build\bin\Release\CreateAssemblyVersion.exe</HintPath>
+      <HintPath>..\..\..\..\s3pi\s3pi\s3pi\build\bin\Release\CreateAssemblyVersion.exe</HintPath>
     </Reference>
     <Reference Include="s3pi.CustomForms">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Interfaces">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.NameMapResource">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.NameMapResource.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.NameMapResource.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Package">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.Package.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.Package.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.StblResource">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.StblResource.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.StblResource.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.WrapperDealer">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.WrapperDealer.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.WrapperDealer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Custom">
-      <HintPath>..\..\s3pi\build\bin\Release\System.Custom.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\System.Custom.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
@@ -78,14 +78,14 @@
     <Compile Include="StringTableSet.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\s3pi\gpl-3.0.txt">
+    <Content Include="..\..\..\s3pi\s3pi\gpl-3.0.txt">
       <Link>gpl-3.0.txt</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)..\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
+    <PreBuildEvent>"$(SolutionDir)..\..\s3pi\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

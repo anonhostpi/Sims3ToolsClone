@@ -43,17 +43,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="s3pi.Helpers">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.Helpers.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Interfaces">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.StblResource">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.StblResource.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.StblResource.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Custom">
-      <HintPath>..\..\s3pi\build\bin\Release\System.Custom.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\System.Custom.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -97,6 +97,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)..\..\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
+    <PreBuildEvent>"$(SolutionDir)..\..\..\s3pi\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
   </PropertyGroup>
 </Project>

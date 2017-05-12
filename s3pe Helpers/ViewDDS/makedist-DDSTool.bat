@@ -6,7 +6,7 @@ rem -%ConfigurationName%
 set src=%TargetName%-Source
 set MAKENSIS=D:\Program Files (x86)\NSIS\makensis.exe
 
-set out=S:\Sims3\Tools\DDSTool\
+set out=S:\Sims3\Tools\sims3tools\builds\DDSTool\
 set helpFolder=%out%HelpFiles
 
 set mydate=%date: =0%
@@ -30,7 +30,7 @@ if x%ConfigurationName%==xRelease goto REL
 set pdb=
 goto noREL
 :REL:
-set pdb=-xr!*.pdb
+set pdb=-xr!*.pdb -xr!*.xml
 :noREL:
 
 
@@ -38,7 +38,7 @@ rem there shouldn't be any to delete...
 del /q /f %out%%TargetName%*%suffix%.*
 
 pushd ..
-7za a -r -t7z -mx9 -ms -xr!.?* -xr!*.suo -xr!zzOld -xr!bin -xr!obj -xr!HelperApp -xr!Makefile -xr!*.Config %pdb% "%out%%src%_%suffix%.7z" "DDSTool"
+7za a -r -t7z -mx9 -ms -xr!.?* -xr!*.suo -xr!zzOld -xr!bin -xr!obj -xr!Makefile -xr!*.Config -xr!HelperApp "%out%%src%_%suffix%.7z" "DDSTool"
 popd
 
 pushd DDSTool\bin\%ConfigurationName%

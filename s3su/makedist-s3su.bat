@@ -6,7 +6,7 @@ rem -%ConfigurationName%
 set src=%TargetName%-Source
 set MAKENSIS=D:\Program Files (x86)\NSIS\makensis.exe
 
-set out=S:\Sims3\Tools\s3su\
+set out=S:\Sims3\Tools\sims3tools\builds\s3su\
 
 
 set mydate=%date: =0%
@@ -30,7 +30,7 @@ if x%ConfigurationName%==xRelease goto REL
 set pdb=
 goto noREL
 :REL:
-set pdb=-xr!*.pdb
+set pdb=-xr!*.pdb -xr!*.xml
 :noREL:
 
 
@@ -85,8 +85,8 @@ popd
 
 "%MAKENSIS%" "/DINSTFILES=INSTFILES.txt" "/DUNINSTFILES=UNINST.LOG" "/DVSN=%suffix%" %nsisv% mknsis.nsi "/XOutFile %out%%base%_%suffix%.exe"
 
-:done:
 rmdir /s/q %base%-%suffix%
 del INSTFILES.txt
+
 :noNSIS:
 pause

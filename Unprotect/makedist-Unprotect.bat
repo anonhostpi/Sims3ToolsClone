@@ -5,7 +5,9 @@ set base=%TargetName%
 rem -%ConfigurationName%
 set src=%TargetName%-Source
 
-set out=S:\Sims3\Tools\Unprotect\
+
+set out=S:\Sims3\Tools\sims3tools\builds\Unprotect\
+
 
 set mydate=%date: =0%
 set dd=%mydate:~0,2%
@@ -17,11 +19,18 @@ set m=%mytime:~3,2%
 set s=%mytime:~6,2%
 set suffix=%yy%-%mm%%dd%-%h%%m%
 
+
+
+
+
+
+
+
 if x%ConfigurationName%==xRelease goto REL
 set pdb=
 goto noREL
 :REL:
-set pdb=-xr!*.pdb
+set pdb=-xr!*.pdb -xr!*.xml
 :noREL:
 
 
@@ -33,7 +42,13 @@ pushd ..
 popd
 
 pushd bin\%ConfigurationName%
+echo %suffix% >%TargetName%-Version.txt
+attrib +r %TargetName%-Version.txt
+
+
 7za a -r -t7z -mx9 -ms -xr!.?* -xr!*vshost* -xr!*.Config %pdb% "%out%%base%_%suffix%.7z" *
+del /f %TargetName%-Version.txt
+
 popd
 
 pause

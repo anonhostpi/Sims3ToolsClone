@@ -78,23 +78,23 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="s3pi.Controls">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.Controls.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.Controls.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.CustomForms">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Helpers">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.Helpers.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Interfaces">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.ObjKeyResource">
-      <HintPath>..\..\s3pi\build\bin\Release\s3pi.ObjKeyResource.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\s3pi.ObjKeyResource.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Custom">
-      <HintPath>..\..\s3pi\build\bin\Release\System.Custom.dll</HintPath>
+      <HintPath>..\..\..\s3pi\s3pi\build\bin\Release\System.Custom.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -107,6 +107,6 @@
     <None Include="Resources\s3pe.ico" />
   </ItemGroup>
   <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)..\..\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
+    <PreBuildEvent>"$(SolutionDir)..\..\..\s3pi\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
   </PropertyGroup>
 </Project>

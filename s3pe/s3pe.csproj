@@ -39,42 +39,42 @@
   <ItemGroup>
     <Reference Include="DDSPanel">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\DDSPanel.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\DDSPanel.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Controls">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Controls.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Controls.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.CustomForms">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.CustomForms.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Extensions">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Extensions.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Helpers">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Helpers.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Interfaces">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Package">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Package.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Package.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Settings">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Settings.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Settings.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.WrapperDealer">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.WrapperDealer.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.WrapperDealer.dll</HintPath>
     </Reference>
     <Reference Include="System.configuration" />
     <Reference Include="System.Custom">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\System.Custom.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\System.Custom.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -326,87 +326,87 @@
       <Link>VPXYResourceEditor.exe</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\Acknowledgements.txt">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\Acknowledgements.txt">
       <Link>Acknowledgements.txt</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\Helpers\Helpers.txt">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\Helpers\Helpers.txt">
       <Link>Helpers\Helpers.txt</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.CASPartResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.CASPartResource.dll">
       <Link>s3pi.CASPartResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.CatalogResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.CatalogResource.dll">
       <Link>s3pi.CatalogResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.ComplateResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.ComplateResource.dll">
       <Link>s3pi.ComplateResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.DefaultResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.DefaultResource.dll">
       <Link>s3pi.DefaultResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.GenericRCOLResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.GenericRCOLResource.dll">
       <Link>s3pi.GenericRCOLResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.JazzResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.JazzResource.dll">
       <Link>s3pi.JazzResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.MeshChunks.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.MeshChunks.dll">
       <Link>s3pi.MeshChunks.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.ModularResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.ModularResource.dll">
       <Link>s3pi.ModularResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.NameMapResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.NameMapResource.dll">
       <Link>s3pi.NameMapResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.NGMPHashMapResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.NGMPHashMapResource.dll">
       <Link>s3pi.NGMPHashMapResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.ObjKeyResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.ObjKeyResource.dll">
       <Link>s3pi.ObjKeyResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.RCOLChunks.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.RCOLChunks.dll">
       <Link>s3pi.RCOLChunks.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.RigResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.RigResource.dll">
       <Link>s3pi.RigResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.ScriptResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.ScriptResource.dll">
       <Link>s3pi.ScriptResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.StblResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.StblResource.dll">
       <Link>s3pi.StblResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.TxtcResource.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.TxtcResource.dll">
       <Link>s3pi.TxtcResource.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\s3pi.UserCAStPreset.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\s3pi.UserCAStPreset.dll">
       <Link>s3pi.UserCAStPreset.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\squishinterface_Win32.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\squishinterface_Win32.dll">
       <Link>squishinterface_Win32.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\squishinterface_x64.dll">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\squishinterface_x64.dll">
       <Link>squishinterface_x64.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -416,11 +416,11 @@
     <Content Include="HelpFiles\Contents.htm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\Helpers\MSPaint.helper">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\Helpers\MSPaint.helper">
       <Link>Helpers\MSPaint.helper</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\s3pi\build\bin\Release\Helpers\Notepad.helper">
+    <Content Include="..\..\s3pi\s3pi\build\bin\Release\Helpers\Notepad.helper">
       <Link>Helpers\Notepad.helper</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -484,6 +484,6 @@
   <PropertyGroup>
     <PostBuildEvent>
     </PostBuildEvent>
-    <PreBuildEvent>"$(SolutionDir)..\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
+    <PreBuildEvent>"$(SolutionDir)..\..\s3pi\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
   </PropertyGroup>
 </Project>

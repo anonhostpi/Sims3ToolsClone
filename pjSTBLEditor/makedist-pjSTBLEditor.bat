@@ -4,9 +4,9 @@ set ConfigurationName=Release
 set base=%TargetName%
 rem -%ConfigurationName%
 set src=%TargetName%-Source
+set MAKENSIS=D:\Program Files (x86)\NSIS\makensis.exe
 
-
-set out=S:\Sims3\Tools\pjSTBLEditor\
+set out=S:\Sims3\Tools\sims3tools\builds\pjSTBLEditor\
 set helpFolder=%out%HelpFiles
 
 set mydate=%date: =0%
@@ -19,16 +19,10 @@ set m=%mytime:~3,2%
 set s=%mytime:~6,2%
 set suffix=%yy%-%mm%%dd%-%h%%m%
 
-if EXIST "%PROGRAMFILES%\nsis\makensis.exe" goto gotNotX86
-if EXIST "%PROGRAMFILES(x86)%\nsis\makensis.exe" goto gotX86
+if EXIST "%MAKENSIS%" goto gotNSIS
 echo "Could not find makensis."
 goto noNSIS
 
-:gotNotX86:
-set MAKENSIS=%PROGRAMFILES%\nsis\makensis.exe
-goto gotNSIS
-:gotX86:
-set MAKENSIS=%PROGRAMFILES(x86)%\nsis\makensis.exe
 :gotNSIS:
 set nsisv=/V3
 
@@ -36,7 +30,7 @@ if x%ConfigurationName%==xRelease goto REL
 set pdb=
 goto noREL
 :REL:
-set pdb=-xr!*.pdb
+set pdb=-xr!*.pdb -xr!*.xml
 :noREL:
 
 
@@ -47,7 +41,6 @@ pushd ..
 7za a -r -t7z -mx9 -ms -xr!.?* -xr!*.suo -xr!zzOld -xr!bin -xr!obj -xr!Makefile -xr!*.Config "%out%%src%_%suffix%.7z" "pjSTBLEditor"
 popd
 
-
 pushd XAML\bin\%ConfigurationName%
 echo %suffix% >%TargetName%-Version.txt
 attrib +r %TargetName%-Version.txt
@@ -57,7 +50,6 @@ rem xcopy "%helpFolder%\*" HelpFiles /s /i /y
 del /f %TargetName%-Version.txt
 del /f /q HelpFiles
 popd
-
 
 7za x -o"%base%-%suffix%" "%out%%base%_%suffix%.7z"
 pushd "%base%-%suffix%"
@@ -93,8 +85,8 @@ popd
 
 "%MAKENSIS%" "/DINSTFILES=INSTFILES.txt" "/DUNINSTFILES=UNINST.LOG" "/DVSN=%suffix%" %nsisv% mknsis.nsi "/XOutFile %out%%base%_%suffix%.exe"
 
-:done:
 rmdir /s/q %base%-%suffix%
 del INSTFILES.txt
+
 :noNSIS:
 pause
