@@ -67,7 +67,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\s3pi Extras\Filetable\GameFolders.xml">
+    <Content Include="..\..\s3pi\s3pi Extras\Filetable\GameFolders.xml">
       <Link>GameFolders.xml</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
