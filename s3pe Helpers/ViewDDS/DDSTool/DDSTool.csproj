@@ -44,7 +44,7 @@
   <ItemGroup>
     <Reference Include="DDSPanel, Version=1107.30.815.14868, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\s3pi\build\bin\Release\DDSPanel.dll</HintPath>
+      <HintPath>..\..\..\..\s3pi\s3pi\build\bin\Release\DDSPanel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -85,11 +85,11 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\s3pi\build\bin\Release\squishinterface_Win32.dll">
+    <Content Include="..\..\..\..\s3pi\s3pi\build\bin\Release\squishinterface_Win32.dll">
       <Link>squishinterface_Win32.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\s3pi\build\bin\Release\squishinterface_x64.dll">
+    <Content Include="..\..\..\..\s3pi\s3pi\build\bin\Release\squishinterface_x64.dll">
       <Link>squishinterface_x64.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -102,7 +102,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>"$(SolutionDir)..\..\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
+    <PreBuildEvent>"$(SolutionDir)..\..\..\s3pi\s3pi\CreateAssemblyVersion\bin\Release\CreateAssemblyVersion.exe" "$(ProjectDir)\"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

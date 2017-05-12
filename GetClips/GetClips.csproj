@@ -26,18 +26,18 @@
   <ItemGroup>
     <Reference Include="s3pi.Filetable, Version=1109.21.1707.30839, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Filetable.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Filetable.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.Interfaces">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="s3pi.NameMapResource">
-      <HintPath>..\s3pi\build\bin\Release\s3pi.NameMapResource.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\s3pi.NameMapResource.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Custom">
-      <HintPath>..\s3pi\build\bin\Release\System.Custom.dll</HintPath>
+      <HintPath>..\..\s3pi\s3pi\build\bin\Release\System.Custom.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
